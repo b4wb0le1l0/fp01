@@ -19,4 +19,4 @@ ormolu - система автоматического форматирован�
 
 hlint - lint tool.
 
-"Real World Haskell" (Bryan O'Sullivan, Don Stewart, and John Goerzen)
+Книга Уилл Курт “Программируй на Haskell”
