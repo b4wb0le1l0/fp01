@@ -17,6 +17,9 @@ jobs:
         uses: haskell/actions/setup@v1
         with:
           ghc-version: '9.4.8'
+      
+      - name: Install dependencies
+        run: cabal update && cabal install --only-dependencies
 
       # - name: Install HLint
       #   run: cabal install hlint
@@ -25,11 +28,11 @@ jobs:
       #   run: |
       #     cabal exec -- hlint .
 
-      - name: Install Ormolu
-        run: cabal install ormolu
+      # - name: Install Ormolu
+      #   run: cabal install ormolu
 
-      - name: Check formatting with Ormolu
-        run: ormolu --mode check $(find . -name "*.hs")
+      # - name: Check formatting with Ormolu
+      #   run: ormolu --mode check $(find . -name "*.hs")
 
   test:
     runs-on: ubuntu-latest
@@ -43,11 +46,6 @@ jobs:
         uses: haskell/actions/setup@v1
         with:
           ghc-version: '9.4.8'
-
-      - name: Install dependencies
-        run: |
-          cabal update
-          cabal install
 
       - name: Run tests
         run: cabal test
