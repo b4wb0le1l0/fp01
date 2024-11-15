@@ -19,14 +19,14 @@ jobs:
           ghc-version: '9.4.8'
 
       # - name: Install HLint
-      #   run: cabal install hlint --resolver lts-20.20
+      #   run: cabal install hlint
 
       # - name: Run HLint
       #   run: |
       #     cabal exec -- hlint .
 
       - name: Install Ormolu
-        run: cabal install ormolu --resolver lts-20.20
+        run: cabal install ormolu
 
       - name: Check formatting with Ormolu
         run: ormolu --mode check $(find . -name "*.hs")
