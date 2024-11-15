@@ -24,7 +24,8 @@ jobs:
           cabal install hlint ormolu --only-dependencies
 
       - name: Run HLint
-        run: cabal exec hlint .
+        run: |
+          cabal exec -- hlint .
 
       - name: Check formatting with Ormolu
         run: ormolu --mode check $(find . -name "*.hs")
