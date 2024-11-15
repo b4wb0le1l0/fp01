@@ -136,4 +136,5 @@ test-suite lab1-test
         base ^>=4.17.2.1,
         tasty,
         tasty-hunit,
+        hlint,
         lab1
