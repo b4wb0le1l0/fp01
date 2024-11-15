@@ -1,0 +1,15 @@
+Test suite lab1-test: RUNNING...
+All tests
+  3 problem
+    Recursion Method Test:                          OK
+    Tail Recursion Method Test:                     OK
+    Infinity collection simple numbers Method Test: OK
+    modularMethod Test:                             OK (0.06s)
+    mapMethod Test:                                 OK
+  28 problem
+    Sum of diagonals (Recursive):                   OK
+    Sum of diagonals (Tail Recursive):              OK
+
+All 7 tests passed (0.07s)
+Test suite lab1-test: PASS
+Test suite logged to: C:\Users\Agasha\Documents\University\FunctionalCoding\lab1\code\lab1\code\dist-newstyle\build\x86_64-windows\ghc-9.4.8\lab1-0.1.0.0\t\lab1-test\test\lab1-0.1.0.0-lab1-test.log
